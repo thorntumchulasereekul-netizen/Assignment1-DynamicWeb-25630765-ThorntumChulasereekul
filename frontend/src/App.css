@@ -1,0 +1,160 @@
+/* --- GLOBAL --- */
+/* --- BASE STYLES --- */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #25282c;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- LAYOUT --- */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* --- HEADINGS --- */
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* --- SECTION BOXES --- */
+.products-section,
+.cart-section {
+  background: rgb(84, 84, 84);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 40px;
+}
+
+/* --- PRODUCT GRID (3–4 per row) --- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+/* --- PRODUCT CARD --- */
+.product-card {
+  background: #7e7e7e;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform .2s ease;
+}
+
+/* --- HOVER EFFECT --- */
+.product-card:hover {
+  transform: translateY(-4px);
+}
+
+/* --- FIXED IMAGE SIZE --- */
+.product-img {
+  width: 300px;
+  height: 200px;        /* ← controls image size */
+  object-fit: cover;    /* ← keeps image proportional */
+  border-bottom: 1px solid #eee;
+}
+
+/* --- PRODUCT INFO --- */
+.product-info {
+  padding: 15px;
+}
+
+/* --- PRODUCT NAME & PRICE --- */
+.product-info h3 {
+  margin: 0 0 8px;
+}
+
+/* --- PRICE STYLE --- */
+.price {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* --- BUTTONS --- */
+.add-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* --- BUTTON HOVER --- */
+.add-btn:hover {
+  background: #45a049;
+}
+
+/* --- CART ITEMS --- */
+.cart-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* --- CART ITEM INFO --- */
+.cart-info h3 {
+  margin: 0;
+}
+
+/* --- CART ACTIONS --- */
+.cart-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* --- QUANTITY INPUT --- */
+.cart-actions input {
+  width: 60px;
+  padding: 5px;
+}
+
+/* --- TOTAL PRICE DISPLAY --- */
+.cart-total {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f0f3f7;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* --- REMOVE BUTTON --- */
+.remove-btn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* --- REMOVE BUTTON HOVER --- */
+.remove-btn:hover {
+  background: #c0392b;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+.empty-cart {
+  color: #777;
+  font-style: italic;
+}
